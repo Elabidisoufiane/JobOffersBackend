@@ -22,8 +22,8 @@ jobs:
       - name: Build and tag Docker image
         run: |
           docker build -t job-offer-management:latest .
-          docker tag job-offer-management:latest sosouca/job-offer-management:latest
+          docker tag job-offer-management:latest sosouca/joboffer-management:latest
 
       - name: Push Docker image to Docker Hub
         run: |
-          docker push sosouca/job-offer-management:latest
+          docker push sosouca/joboffer-management:latest
